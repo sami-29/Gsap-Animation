@@ -1,0 +1,124 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  color: white;
+  font-size: clamp(0.25rem, min(1vw, 2.2vh), 2rem);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+}
+
+#section-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: hsl(45, 73%, 50%);
+  background-image: linear-gradient(
+    to left,
+    hsl(45, 73%, 50%),
+    hsla(45, 73%, 50%, 0.74)
+  );
+  font-size: 10em;
+  display: flex;
+  letter-spacing: 0.35em;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .arrow1 {
+    left: 100%;
+  }
+  z-index: 3;
+}
+
+#section-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 10em;
+  display: flex;
+  letter-spacing: 0.35em;
+  align-items: center;
+  justify-content: center;
+
+  background-color: yellowgreen;
+  background-image: linear-gradient(
+    to left,
+    rgba(151, 207, 39, 0.753),
+    rgba(153, 205, 50, 0.753)
+  );
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  .arrow2 {
+    bottom: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+#section-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 10em;
+  display: flex;
+  letter-spacing: 0.35em;
+  align-items: center;
+  justify-content: center;
+
+  background-color: yellowgreen;
+  background-image: linear-gradient(
+    to left,
+    rgba(153, 205, 50, 0.753),
+    rgba(153, 205, 50, 0.589)
+  );
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  .arrow3 {
+    right: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+#section-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 10em;
+  display: flex;
+  letter-spacing: 0.35em;
+  align-items: center;
+  justify-content: center;
+
+  background-color: yellowgreen;
+  background-image: linear-gradient(
+    to left,
+    rgba(151, 207, 39, 0.753),
+    rgba(153, 205, 50, 0.753)
+  );
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+
+  .arrow4 {
+    top: 100%;
+  }
+}
