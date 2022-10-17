@@ -8,20 +8,23 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  overflow: hidden;
 }
 
 html,
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+
   overflow: hidden;
 }
 body {
   color: white;
   font-size: var(--fs);
-  overflow: hidden;
+
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -99,12 +102,12 @@ body {
     rgba(153, 205, 50, 0.753),
     rgba(153, 205, 50, 0.589)
   );
+  z-index: 1;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+
   .arrow3 {
     right: 100%;
-    transform: rotate(-90deg);
   }
 }
 

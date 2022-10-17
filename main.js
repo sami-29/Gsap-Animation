@@ -20,8 +20,8 @@ secOneTimeline
     stagger: 0.05,
   })
   .to(arrow1, {
-    x: -window.innerWidth / 1.01,
-    y: -window.innerHeight / 2.75,
+    x: -window.innerWidth / 1.05,
+    y: -window.innerHeight / 2.25,
     rotation: 360,
     duration: 1.5,
     ease: "expo",
@@ -32,7 +32,7 @@ secOneTimeline
 onresize = () => {
   console.log(window.innerHeight, window.innerWidth);
   gsap.to(arrow1, {
-    x: -window.innerWidth / 1.01,
+    x: -window.innerWidth / 1.05,
     y: -window.innerHeight / 2.75,
     duration: 0,
   });
@@ -80,8 +80,8 @@ arrow2.onclick = () => {
       stagger: 0.05,
     })
     .to(arrow3, {
-      x: window.innerWidth / 1.01,
-      y: window.innerHeight / 2.75,
+      x: window.innerWidth / 1.1,
+      y: window.innerHeight / 2.5,
       rotation: 180,
       duration: 1.5,
       ease: "expo",
@@ -106,7 +106,7 @@ arrow3.onclick = () => {
     })
     .to(arrow4, {
       x: window.innerWidth / 2.75,
-      y: -window.innerHeight / 1.01,
+      y: -window.innerHeight / 1.05,
       rotation: 450,
       duration: 1.5,
       ease: "expo",
